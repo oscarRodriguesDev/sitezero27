@@ -4,32 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script type="module" src="./program.js"></script>
     <title>zero27rh</title>
   </head>
   <body>
     <div class="container">
-        <div class="cabecalho">
-            <img src="./res/icone.png" alt="icone da pagina" class="representaPage">
-            <nav class="menu">
-                <ul>
-                    <li><a href="#">Sobre Nós</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Clientes</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+      <div class="cabecalho">
+        <img
+          src="./res/icone.png"
+          alt="icone da pagina"
+          class="representaPage"
+        />
+        <nav class="menu">
+          <ul>
+            <li><a href="#">Sobre Nós</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Clientes</a></li>
+            <li><a href="#">Vagas</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="banner">
-        <img src="./res/pagina1.png" alt="imagem da pagina 1" class="banner-image">
-    </div>
+        <img
+          src="./res/pagina1.png"
+          alt="imagem da pagina 1"
+          class="banner-image"
+        />
+      </div>
       <section class="about">
         <h2 class="titulo">Sobre nós</h2>
-        <img
-          src="./res/constructor.jpg"
-          alt="site em construção"
-          class="imagePage"
-        />
         <p>
           Desde a sua fundação em 20XX, a Zero27 RH tem sido uma força motriz no
           cenário empresarial, comprometida em conectar talentos excepcionais às
@@ -39,7 +44,58 @@
           empresas.
         </p>
       </section>
-     
+      <div class="provisori">
+        <img
+          src="./res/constructor.jpg"
+          alt="site em construção"
+          class="imagePage"
+        />
+      </div>
     </div>
+    <footer class="rodape">
+      <div class="imagem-footer">
+        <img src="./res/image.png" alt="Imagem do rodape" />
+      </div>
+      <div class="adress-footer">
+        <p>
+          Rua dos bobos numero 0 cep 00000000 estado critico - cidade
+          inacessível telefone (27) 99883-6800 - email:
+        </p>
+      </div>
+      <nav class="menufooter">
+        <ul class="groupMenu">
+          <li><a href="#">Saiba mais Sobre Nós</a></li>
+          <li><a href="#">Conheça Serviços</a></li>
+          <li><a href="#">Entre em Contato</a></li>
+          <li><a href="#">Clientes que nos escolheram</a></li>
+          <li><a href="#">Acompanhe nosso Blog</a></li>
+          <li><a href="#">Confira nossas Vagas</a></li>
+        </ul>
+      </nav>
+      <div class="bot">
+        <form class="formWhats" id="form">
+          <input
+            type="image"
+            src="./res/iconeWhats.webp"
+            alt="Descrição da imagem"
+          /> <span>Fale agora mesmo com nossos especialistas</span> 
+          <input type="text" placeholder="Seu numero Whatsaap" id="numero" />
+          <textarea
+            id="mensagem"
+            value=""
+            rows="5"
+            placeholder="digite aqui sua mensagem..."
+          ></textarea>
+          <input type="submit" value="enviar" id="enter" />
+        </form>
+        <img src="./res/bot.png" alt="bot do site" class="bot-image" />
+      </div>
+      <div class="iconesSociais">
+        <img src="./res/facebook.png" alt="face">
+        <img src="./res/instagram.png" alt="insta">
+        <img src="./res/linkedin.png" alt="linkedin">
+      </div>
+    </footer>
+    <p class="legal">© 2024 Zero27 RH - Todos os direitos reservados.</p>
   </body>
 </html>
