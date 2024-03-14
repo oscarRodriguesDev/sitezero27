@@ -25,8 +25,8 @@
 }
 
 .representaPage {
-    width: 67px;
-    height: 48px;
+    width: 150px;
+    height: 150px;
 
 }
 
@@ -65,8 +65,7 @@
 .provisori img {
     width: 90vw;
     height: 90vh;
-
-
+display:none;
 }
 
 .banner-image {
@@ -74,19 +73,20 @@
     height: 400px;
 }
 
-.about {
+.service{
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 15%;
 }
 
-.about .titulo {
+.service  .titulo {
     text-align: center;
     font-size: 36px;
+    margin:16px 0;
 }
 
-.about p {
+.service p {
     padding: 10px;
     line-height: 1.7;
     width: 896px;
@@ -117,10 +117,12 @@
 
 .adress-footer p {
     position: absolute;
-    bottom: 20%;
+    border:1px solid black;
+    margin-top: 40px;
     margin-left: 5%;
     font-size: 20px;
     color: white;
+    display:none;
 
 }
 
@@ -274,4 +276,77 @@
     width: 60px;
     height: 60px;  
    
+}
+
+/*  formulario da tela de contatos */
+.formulario-contact {
+    width: 1000px; /* Ajuste a largura máxima conforme necessário */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffcd5951;
+    border-radius: 10px;
+    margin-bottom:25px;
+   
+}
+
+.formulario-contact label {
+    font-weight: bold;
+    color: #000;
+    font-size:22px;
+}
+
+.formulario-contact input[type="text"],
+.formulario-contact input[type="email"],
+.formulario-contact input[type="tel"],
+.formulario-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size:20px;
+}
+
+.formulario-contact textarea {
+    resize: none;
+}
+
+.formulario-contact input[type="submit"] {
+    width: 50%;
+    padding: 10px;
+    margin-left:25%;
+    font-size:20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario-contact input[type="submit"]:hover {
+    background-color: #fff;
+    color: #000;
+}
+/* tela de clientes */
+.container-clientes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.cliente {
+   
+    text-align: center;
+    border-radius: 100%;
+}
+
+.cliente img {
+    width: 150px;
+    height:150px;
+    border:3px solid rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    cursor: pointer;
+
 }

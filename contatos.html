@@ -34,39 +34,26 @@
         />
       </div>
       <section class="service">
-        <h2 class="titulo">Sobre nós</h2>
-        <p>
-          A Empresa de Recursos Humanos (RH) surge como uma peça
-          fundamental no cenário empresarial moderno, oferecendo soluções
-          personalizadas e eficazes para as necessidades em constante evolução
-          das organizações. Compreendendo a importância crucial do capital
-          humano, a empresa de RH se compromete a cultivar um ambiente de
-          trabalho que promova o crescimento profissional e pessoal dos
-          colaboradores. A missão da empresa de RH é facilitar o alinhamento
-          entre os objetivos estratégicos da empresa e o potencial dos seus
-          colaboradores. Através de uma abordagem holística, a empresa de RH
-          oferece uma ampla gama de serviços, incluindo recrutamento e seleção,
-          avaliação de desempenho, treinamento e desenvolvimento, gestão de
-          talentos, consultoria em legislação trabalhista, entre outros. Ao
-          compreender as necessidades únicas de cada cliente, a empresa de RH
-          desenvolve estratégias personalizadas para atender aos desafios
-          específicos de cada organização. Com uma equipe de profissionais
-          experientes e especializados, a empresa de RH trabalha em parceria com
-          seus clientes para identificar oportunidades de melhoria e implementar
-          soluções eficazes que impulsionam o sucesso empresarial. Através de
-          uma abordagem centrada no ser humano, a empresa de RH promove um
-          ambiente de trabalho inclusivo e colaborativo, onde todos os
-          colaboradores se sentem valorizados e motivados a contribuir para o
-          sucesso da organização. Com uma visão voltada para o futuro, a empresa
-          de RH está comprometida em desenvolver soluções inovadoras que ajudem
-          seus clientes a enfrentar os desafios do mercado em constante mudança.
-          Em suma, a empresa de RH desempenha um papel vital na construção de
-          organizações bem-sucedidas, oferecendo serviços especializados que
-          ajudam a atrair, desenvolver e reter o talento necessário para
-          impulsionar o crescimento e a inovação. Ao investir no capital humano,
-          a empresa de RH ajuda seus clientes a alcançarem novos patamares de
-          sucesso e excelência.
-        </p>
+        <h2 class="titulo">Fale Conosco</h2>
+        <form action="/enviar" method="post" class= 'formulario-contact'>
+      
+          <label for="nome">Nome:</label><br>
+          <input type="text" id="nome" name="nome" required><br><br>
+
+          <label>Sobrenome (opcional):</label><br>
+          <input type="text" id="last_name" required><br><br>
+
+          <label for="email">E-mail:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="telefone">Telefone:</label><br>
+          <input type="tel" id="telefone" name="telefone" required><br><br>
+          
+          <label for="descricao">Sobre qual assunto você gostaria de falar conosco</label><br>
+          <textarea id="descricao" rows="4" cols="50" required></textarea><br><br>
+          
+          <input type="submit" value="Enviar">
+      </form>
       </section>
       <div class="provisori">
         <img
