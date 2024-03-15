@@ -11,7 +11,7 @@
     <div class="container">
       <div class="cabecalho">
         <img
-          src="./res/icone.png"
+          src="./res/ico.png"
           alt="icone da pagina"
           class="representaPage"
         />
@@ -28,36 +28,74 @@
       </div>
       <div class="banner">
         <img
-          src="./res/pagina1.png"
+          src="./res/pagina1-min.png"
           alt="imagem da pagina 1"
           class="banner-image"
         />
       </div>
       <section class="service">
         <h2 class="titulo">Fale Conosco</h2>
-        <form action="/enviar" method="post" class= 'formulario-contact'>
-      
-          <label for="nome">Nome:</label><br>
-          <input type="text" id="nome" name="nome" required><br><br>
-
-          <label>Sobrenome (opcional):</label><br>
-          <input type="text" id="last_name" required><br><br>
-
-          <label for="email">E-mail:</label><br>
-          <input type="email" id="email" name="email" required><br><br>
-
-          <label for="telefone">Telefone:</label><br>
-          <input type="tel" id="telefone" name="telefone" required><br><br>
-          
-          <label for="descricao">Sobre qual assunto você gostaria de falar conosco</label><br>
-          <textarea id="descricao" rows="4" cols="50" required></textarea><br><br>
-          
-          <input type="submit" value="Enviar">
-      </form>
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulário de Contato</title>
+        </head>
+        <body>
+        
+          <form id="meuFormulario" class="formulario-contact" action='https://docs.google.com/forms/d/e/1FAIpQLSck9vjrEops6xIo1n10gZzt8vBX5fRZZ2cgSw4lFUvI8TU4qg/formResponse' method='POST'>
+            <label for="Nome">Nome:</label><br>
+            <input type="text" id="nome" name="entry.149025847" required><br><br>
+        
+            <label for="Sobrenome">Sobrenome:</label><br>
+            <input type="text" id="sobrenome" name="entry.1792613816"><br><br>
+            
+            <label for="Telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="entry.1446905000"><br><br>
+        
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="entry.1203428248" required><br><br>
+        
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="entry.1208907420" rows="4" cols="50" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <script>
+        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+        
+            var form = event.target;
+            var formData = new FormData(form);
+        
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                mode: "no-cors" // Necessário para CORS
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    alert("Mensagem enviada com sucesso!");
+                    form.reset(); // Limpa o formulário após o envio
+                  } else {
+                  form.reset(); // Limpa o formulário após o envio
+                  
+                }
+            })
+            .catch(function(error) {
+                console.error("Erro:", error);
+                alert("Ocorreu um erro ao enviar a mensagem.");
+            });
+        });
+        </script>
+        </body>
+        </html>
       </section>
       <div class="provisori">
         <img
-          src="./res/constructor.jpg"
+          src="./res/constructor-min.jpg"
           alt="site em construção"
           class="imagePage"
         />
@@ -65,7 +103,7 @@
     </div>
     <footer class="rodape">
       <div class="imagem-footer">
-        <img src="./res/image.png" alt="Imagem do rodape" />
+        <img src="./res/image-min.png" alt="Imagem do rodape" />
       </div>
       <div class="adress-footer">
         <p>
@@ -87,7 +125,7 @@
         <form class="formWhats" id="form">
           <input
             type="image"
-            src="./res/iconeWhats.webp"
+            src="./res/iconeWhats.png"
             alt="Descrição da imagem"
           />
           <span>Fale agora mesmo com nossos especialistas</span>
@@ -100,12 +138,12 @@
           ></textarea>
           <input type="submit" value="enviar" id="enter" />
         </form>
-        <img src="./res/bot.png" alt="bot do site" class="bot-image" />
+        <img src="./res/bot-min.png" alt="bot do site" class="bot-image" />
       </div>
       <div class="iconesSociais">
-        <img src="./res/facebook.png" alt="face" />
-        <img src="./res/instagram.png" alt="insta" />
-        <img src="./res/linkedin.png" alt="linkedin" />
+        <img src="./res/facebook-min.png" alt="face" />
+        <img src="./res/instagram-min.png" alt="insta" />
+        <img src="./res/linkedin-min.png" alt="linkedin" />
       </div>
     </footer>
     <p class="legal">© 2024 Zero27 RH - Todos os direitos reservados.</p>
