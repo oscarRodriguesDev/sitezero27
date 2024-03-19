@@ -4,56 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="styles.mobile.css" type="text/css" />
     <script type="module" src="./program.js"></script>
     <title>zero27rh</title>
   </head>
   <body>
     <div class="container">
       <div class="cabecalho">
-        <img
-          src="./res/ico.png"
-          alt="icone da pagina"
-          class="representaPage"
-        />
+        <img src="./res/ico.png" alt="icone da pagina" class="representaPage" />
         <nav class="menu">
           <ul>
             <li><a href="/index.html">Sobre Nós</a></li>
             <li><a href="/serviços.html">Serviços</a></li>
             <li><a href="/clientes.html">Clientes</a></li>
             <li><a href="vagas.html">Vagas</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="./400.html">Blog</a></li>
             <li><a href="/contatos.html">Contato</a></li>
           </ul>
         </nav>
       </div>
       <div class="banner">
         <img
-          src="./res/pagina1-min.png"
+          src="./res/services.webp"
           alt="imagem da pagina 1"
           class="banner-image"
         />
       </div>
       <section class="service">
         <h2 class="titulo">Serviços</h2>
-        <div id="produtos">
-          <h2>Serviços de Consultoria em Recrutamento e Seleção</h2>
-          <ul>
-              <li>Recrutamento de pessoal em tempo integral</li>
-              <li>Recrutamento de pessoal temporário</li>
-              <li>Avaliação de necessidades de pessoal</li>
-              <li>Desenvolvimento de descrições de cargo</li>
-              <li>Identificação de talentos</li>
-              <li>Triagem inicial de candidatos</li>
-              <li>Realização de entrevistas</li>
-              <li>Verificação de referências</li>
-              <li>Avaliação de competências</li>
-              <li>Apoio na negociação de ofertas</li>
-              <li>Integração de novos funcionários</li>
-              <li>Consultoria em políticas de recrutamento</li>
-              <li>Análise de tendências de mercado</li>
-              <li>Treinamento em recrutamento</li>
-          </ul>
-        </div>
+        <section class="services">
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+          <div class="service-card">
+              <img src="./res/config.jpeg" alt="Recrutamento de Pessoal">
+              <h2>Recrutamento de Pessoal</h2>
+              <p>Identificação e recrutamento ativo de candidatos para posições específicas dentro de uma empresa cliente.</p>
+          </div>
+      
+      
+      
+      </section>
+      
       </section>
       <div class="provisori">
         <img
@@ -63,33 +94,40 @@
         />
       </div>
     </div>
+
+
+  <!--efazendo o footer do site -->
     <footer class="rodape">
-      <div class="imagem-footer">
-        <img src="./res/image-min.png" alt="Imagem do rodape" />
-      </div>
-      <div class="adress-footer">
-        <p>
-          Rua dos bobos numero 0 cep 00000000 estado critico - cidade
-          inacessível telefone (27) 99883-6800 - email: email@email.com.br  
-        </p>
-      </div>
-      <nav class="menufooter">
-        <ul class="groupMenu">
-          <li><a href="#">Saiba mais Sobre Nós</a></li>
-          <li><a href="#">Conheça Serviços</a></li>
-          <li><a href="#">Entre em Contato</a></li>
-          <li><a href="#">Clientes que nos escolheram</a></li>
-          <li><a href="#">Acompanhe nosso Blog</a></li>
-          <li><a href="#">Confira nossas Vagas</a></li>
-        </ul>
-      </nav>
-      <div class="bot">
-        <form class="formWhats" id="form">
-          <input
-            type="image"
-            src="./res/iconeWhats.png"
-            alt="Descrição da imagem"
-          />
+      <h3 class='rodape-title' id="endereço">Endereço não informado</h3>
+      <section class="rodape-container">
+        <div class="img-footer">
+          <img src="./res/image-min.png" alt="imagem zero 27 o footer">
+        </div>
+        
+          <nav class="rodape-menu">
+            <ul>
+              <li><a href="index.html">Quem somos?</a></li>
+              <li><a href="clientes.html">Quem são nossos clientes?</a></li>
+              <li><a href="serviços.html">O que oferecemos</a></li>
+              <li><a href="contatos.html">Fale conosco</a></li>
+              <li><a href="vagas.html">Veja nossas vagas</a></li>
+              <li><a href="privace.html">Conheça nossa politica de privacidade</a></li>
+
+            </ul>
+          </nav>
+      
+
+        <div class="rodape-sociais">
+          <h3>Siga nosso trabalho:</h3>
+          <ul>
+            <li><img src="./res/facebook-min.png" alt="icone do facebook"></li>
+            <li><img src="./res/instagram-min.png" alt=" icone do instagram"></li>
+            <li><img src="./res/linkedin-min.png" alt="icone do linkedin"></li>
+          </ul>
+
+        </div>
+
+        <div class="bot">
           <span>Fale agora mesmo com nossos especialistas</span>
           <input type="text" placeholder="Seu numero Whatsaap" id="numero" />
           <textarea
@@ -100,13 +138,11 @@
           ></textarea>
           <input type="submit" value="enviar" id="enter" />
         </form>
-        <img src="./res/bot-min.png" alt="bot do site" class="bot-image" />
+        <img src="./res/atendente.png" alt="bot do site" class="bot-image" />
       </div>
-      <div class="iconesSociais">
-        <img src="./res/facebook-min.png" alt="face" />
-        <img src="./res/instagram-min.png" alt="insta" />
-        <img src="./res/linkedin-min.png" alt="linkedin" />
-      </div>
+    
+      </section>
+      
     </footer>
     <p class="legal">© 2024 Zero27 RH - Todos os direitos reservados.</p>
   </body>
