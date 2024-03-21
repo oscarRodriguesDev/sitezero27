@@ -1,1 +1,350 @@
-@media screen and (max-width:800px){.formulario-contact,.service-card{border-radius:10px;box-shadow:0 0 10px rgba(0,0,0,.1)}*{margin:0;padding:0;box-sizing:border-box}.container{width:800px;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:column;margin:0 1px}.cabecalho{display:flex;flex-direction:row;margin:5px 0}.menu ul li{list-style:none;margin:2px 5px}.banner-image{height:400px}.service p{padding:10px;line-height:1.7;width:600px;font-size:18px;font-weight:500}.rodape{background-image:url(./res/fundofooter-min.png);display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%}.rodape-container{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:2px 2px 2px 0}.img-footer img,.rodape .rodape-title,.rodape-sociais h3{display:none}.rodape-sociais img{width:75px;height:75px}.vaga article p{font-size:15px}.vaga article img{width:200px;height:200px;padding:5px;border-radius:50%}.services{display:flex;flex-wrap:wrap;justify-content:center;gap:12px}.service-card{width:calc(50% - 12px);padding:13px;text-align:center;background-color:#fff}.service-card img{width:100%;border-radius:8px;margin-bottom:10px}.service-card h2{font-size:1em;color:#333;margin-bottom:6px}.service-card p{font-size:20px;color:#666;line-height:1.1;text-align:center;width:100%}.formulario-contact{width:90%;margin:0 auto 25px;padding:20px;background-color:#f9f9f9}.formulario-contact label{font-weight:700;color:#333;font-size:18px}.formulario-contact input[type=email],.formulario-contact input[type=tel],.formulario-contact input[type=text],.formulario-contact textarea{width:100%;padding:10px;margin-top:8px;margin-bottom:15px;border:1px solid #ccc;border-radius:5px;font-size:16px;box-sizing:border-box}.formulario-contact textarea{resize:none}.formulario-contact input[type=submit]{width:50%;padding:12px;margin-left:25%;font-size:18px;border:none;border-radius:5px;background-color:#007bff;color:#fff;cursor:pointer;transition:background-color .3s}.formulario-contact input[type=submit]:hover{background-color:#0056b3}}@media screen and (max-width:450px){.container{width:450px;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:column;margin:0 1px}.cabecalho{display:flex;flex-direction:column;align-items:first baseline;margin:1px 0}.container-clientes,.menu ul{flex-direction:column;display:flex}.menu ul{align-items:first baseline}.banner-image{height:450px}.service p{width:400px;font-size:18px;font-weight:500}.rodape{width:100%;height:100%}.service-card p{font-size:12px;width:100%;font-weight:600}.container-clientes{align-items:center;justify-content:center}.cliente .img{width:100%;height:300px;background-image:url(/res/cliente-min.jpg);background-size:cover;border:3px solid rgba(0,0,0,.28);border-radius:2%;cursor:pointer}.vaga{display:flex;flex-direction:column;align-items:flex-start;margin-bottom:15px}.vaga article p{font-size:12px}.vaga article img{width:100px;height:200px;padding:5px;border-radius:50%}.vaga .titulo{font-size:25px}.info-empresa h5{margin:0 10px;font-size:15px;text-align:center;color:#110860d0}.formulario-contact{width:90%;margin-right:5%}}
+@media screen and (max-width:800px) {
+
+    .formulario-contact,
+    .service-card {
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box
+    }
+
+    .container {
+        width: 800px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 1px
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-direction: row;
+        margin: 5px 0
+    }
+
+    .menu ul li {
+        list-style: none;
+        margin: 2px 5px
+    }
+
+    .banner-image {
+        height: 400px
+    }
+
+    .service p {
+        padding: 10px;
+        line-height: 1.7;
+        width: 600px;
+        font-size: 18px;
+        font-weight: 500
+    }
+
+    .rodape {
+        background-image: url(./res/fundofooter-min.png);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%
+    }
+
+    .rodape-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: 2px 2px 2px 0
+    }
+
+    .img-footer img,
+    .rodape .rodape-title,
+    .rodape-sociais h3 {
+        display: none
+    }
+
+    .rodape-sociais img {
+        width: 75px;
+        height: 75px
+    }
+
+    .vaga article p {
+        font-size: 15px
+    }
+
+    .vaga article img {
+        width: 200px;
+        height: 200px;
+        padding: 5px;
+        border-radius: 50%
+    }
+
+    .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px
+    }
+
+    .service-card {
+        width: calc(50% - 12px);
+        padding: 13px;
+        text-align: center;
+        background-color: #fff
+    }
+
+    .service-card img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 10px
+    }
+
+    .service-card h2 {
+        font-size: 1em;
+        color: #333;
+        margin-bottom: 6px
+    }
+
+    .service-card p {
+        font-size: 20px;
+        color: #666;
+        line-height: 1.1;
+        text-align: center;
+        width: 100%
+    }
+
+    .formulario-contact {
+        width: 90%;
+        margin: 0 auto 25px;
+        padding: 20px;
+        background-color: #f9f9f9
+    }
+
+    .formulario-contact label {
+        font-weight: 700;
+        color: #333;
+        font-size: 18px
+    }
+
+    .formulario-contact input[type=email],
+    .formulario-contact input[type=tel],
+    .formulario-contact input[type=text],
+    .formulario-contact textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 8px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        box-sizing: border-box
+    }
+
+    .formulario-contact textarea {
+        resize: none
+    }
+
+    .formulario-contact input[type=submit] {
+        width: 50%;
+        padding: 12px;
+        margin-left: 25%;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color .3s
+    }
+
+    .formulario-contact input[type=submit]:hover {
+        background-color: #0056b3
+    }
+}
+
+@media screen and (max-width:450px) {
+    .container {
+        width: 450px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 1px
+    }
+
+    .cabecalho {
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        margin: 1px 0
+    }
+
+    .container-clientes,
+    .menu ul {
+        flex-direction: column;
+        display: flex
+    }
+
+    .menu ul {
+        align-items: first baseline
+    }
+
+    .banner-image {
+        height: 450px
+    }
+
+    .service p {
+        width: 400px;
+        font-size: 18px;
+        font-weight: 500
+    }
+
+    .rodape {
+        width: 100%;
+        height: 100%
+    }
+
+    .service-card p {
+        font-size: 12px;
+        width: 100%;
+        font-weight: 600
+    }
+
+    .container-clientes {
+        align-items: center;
+        justify-content: center
+    }
+
+    .cliente .img {
+        width: 100%;
+        height: 300px;
+        background-image: url(/res/cliente-min.jpg);
+        background-size: cover;
+        border: 3px solid rgba(0, 0, 0, .28);
+        border-radius: 2%;
+        cursor: pointer
+    }
+
+    .vaga {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 15px
+    }
+
+    .vaga article p {
+        font-size: 12px
+    }
+
+    .vaga article img {
+        width: 100px;
+        height: 200px;
+        padding: 5px;
+        border-radius: 50%
+    }
+
+    .vaga .titulo {
+        font-size: 25px
+    }
+
+    .info-empresa h5 {
+        margin: 0 10px;
+        font-size: 15px;
+        text-align: center;
+        color: #110860d0
+    }
+
+    .formulario-contact {
+        width: 90%;
+        margin-right: 5%
+    }
+}
+
+/* para dispositivos com largura ate 375 */
+@media screen and (max-width:375px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        max-width: 375px; 
+        width: 100%; 
+        height: auto;
+        text-align: center;
+    }
+    
+   
+    .banner-image {
+        width: 100%;
+        max-width: 375px; 
+        width: 100%; 
+       
+    }
+
+    .service{
+        width: 100%;
+        max-width: 375px;
+    }
+
+    .service p{
+        width: 340px;
+        font-size: 15px;
+    }
+
+    .rodape{
+       width: 375px;
+     align-items: center;
+      
+    }
+    
+    .service-card {
+        width: calc(50% - 25px);
+        padding: 5px;
+        text-align: center;
+        background-color: #fff
+    }
+
+    .service-card p{
+        width:100%;
+    }
+
+ 
+
+    .vaga article p {
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .vaga article img {
+        width: 80px;
+        height: 100px;
+        padding: 2px;
+        border-radius: 25%
+    }
+
+    .vaga .titulo {
+        font-size: 18px
+    }
+
+    .info-empresa h5 {
+        margin: 0 10px;
+        font-size: 13px;
+        text-align: center;
+        color: #110860d0
+    }
+
+    
+}
+
+
+   
+
+

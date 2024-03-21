@@ -15,4 +15,22 @@ function impedirEnvio(event){
     enviarWhatsApp();
 }
 
-formulario.addEventListener( 'submit', ()=>{impedirEnvio(Event)}, false );
+function alterarEndereco(endereço,id){
+    document.getElementById(id).innerText= endereço;
+    
+}
+
+const btn_cad  = document.querySelector('.cad-btn')
+
+btn_cad.addEventListener('click',()=>{
+   //redirecionar para pagina de contatos
+   location.replace('contatos.html');
+},false)
+
+
+
+window.addEventListener('DOMContentLoaded',()=>{alterarEndereco('Morada De Laranjeiras - Serra - ES','endereco')},false)
+
+formulario.addEventListener( 'submit', ()=>{impedirEnvio(Event)}, false ); 
+
+

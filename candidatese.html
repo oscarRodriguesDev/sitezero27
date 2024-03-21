@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <link rel="stylesheet" href="styles.mobile.css" type="text/css" />
+    <script type="module" src="./program.js"></script>
+    <title>zero27rh</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cabecalho">
+        <img
+          src="./res/ico.png"
+          alt="icone da pagina"
+          class="representaPage"
+        />
+        <nav class="menu">
+          <ul>
+            <li><a href="/index.html">Sobre Nós</a></li>
+            <li><a href="/serviços.html">Serviços</a></li>
+            <li><a href="/clientes.html">Clientes</a></li>
+            <li><a href="vagas.html">Vagas</a></li>
+            <li><a href="./400.html">Blog</a></li>
+            <li><a href="/contatos.html">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+     
+      <section class="service">
+        <h2 class="titulo">Cadastre-se</h2>
+        <!DOCTYPE html>
+        <html lang="pt-BR">
+        <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Candidatura Simplificada</title>
+        </head>
+        <body>
+        
+          <form id="meuFormulario" class="formulario-contact" action='https://docs.google.com/forms/d/1JuN4xKpGnS0Ot3psKsck6G_yox8m3kUsHsYc9CdSmOo/formResponse' method='POST'>
+            <label for="Nome Completo">Nome Completo:</label><br>
+            <input type="text" id="nome" name="entry.150854727" required><br><br>
+
+            <label for="Idade">Idade:</label><br>
+            <input type="Number" id="idade" name="entry.928532374" required><br><br>
+
+            <label>
+                <input type="radio" name="sexo" value="masculino">
+                Masculino
+              </label>
+              <label>
+                <input type="radio" name="sexo" value="feminino">
+                Feminino
+              </label>
+              <label>
+                <input type="radio" name="sexo" value="nao_informar">
+                Prefiro não informar
+              </label><br>
+              
+        
+            <label for="Telefone">Telefone:</label><br>
+            <input type="tel" id="telefone-cad" name="entry.382022312"><br><br>
+        
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email-cad" name="entry.235887725" required><br><br>
+        
+            <label for="cep">Informe o CEP de sua residencia</label><br>
+            <input type="text" id="cep" name="entry.1003640601" required><br><br>
+        
+            <h3>Escolaridade</h3>
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino Superior Completo
+              </label><br>
+              
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino Superior Completo
+              </label><br>
+              
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino Superior Completo
+              </label><br>
+              
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino Superior Incompleto
+              </label><br>
+              
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino medio Completo
+              </label><br>
+              
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino Medio Incompleto
+              </label><br>
+
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino Fundamental Completo
+              </label><br>
+
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Ensino Fundamental Incompleto
+              </label><br>
+              
+            <label>
+                <input type="radio" name="escolaridade" value="masculino">
+                Outros
+                <input type=""><!-- caso outrs esse input tem que ser required -->
+            </label>
+            <h3>Experiencia profissional</h3>
+            <div class="experiencia-profissional">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" placeholder="Digite seu cargo">
+            
+                <label for="experiencia">Experiência Profissional:</label>
+                <textarea id="experiencia" name="experiencia" rows="4" placeholder="Descreva sua experiência profissional"></textarea>
+            </div>
+            <div class="experiencia-profissional">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" placeholder="Digite seu cargo">
+            
+                <label for="experiencia">Experiência Profissional:</label>
+                <textarea id="experiencia" name="experiencia" rows="4" placeholder="Descreva sua experiência profissional"></textarea>
+            </div>
+            <div class="experiencia-profissional">
+                <label for="cargo">Cargo:</label>
+                <input type="text" id="cargo" name="cargo" placeholder="Digite seu cargo">
+            
+                <label for="experiencia">Experiência Profissional:</label>
+                <textarea id="experiencia" name="experiencia" rows="4" placeholder="Descreva sua experiência profissional"></textarea>
+            </div>
+            
+            <h3>Finalizando</h3>
+            <label>Para qual vaga está se candidatando?</label>
+            <input type="text">
+
+            <label>
+                <input type='radio' name = 'aceite'>
+               Estou ciente e concordo que meus dados serão armazenados em banco de dados de talentos e serão consultados para futuros
+            </label>
+            <br>
+        
+            
+            <input type="" value="Enviar">
+        </form>
+        
+        <script>
+        document.getElementById("meuFormulario").addEventListener("submit", function(event) {
+            event.preventDefault(); // Impede o envio padrão do formulário
+        
+            var form = event.target;
+            var formData = new FormData(form);
+        
+            fetch(form.action, {
+                method: "POST",
+                body: formData,
+                mode: "no-cors" // Necessário para CORS
+            })
+            .then(function(response) {
+                if (response.ok) {
+                    alert("Mensagem enviada com sucesso!");
+                    form.reset(); // Limpa o formulário após o envio
+                  } else {
+                  form.reset(); // Limpa o formulário após o envio
+                  
+                }
+            })
+            .catch(function(error) {
+                console.error("Erro:", error);
+                alert("Ocorreu um erro ao enviar a mensagem.");
+            });
+        });
+        </script>
+        </body>
+        </html>
+      </section>
+      <div class="provisori">
+        <img
+          src="./res/constructor-min.jpg"
+          alt="site em construção"
+          class="imagePage"
+        />
+      </div>
+    </div>
+    <!--efazendo o footer do site -->
+    <footer class="rodape">
+      <h3 class='rodape-title' id="endereço">Endereço não informado</h3>
+      <section class="rodape-container">
+        <div class="img-footer">
+          <img src="./res/image-min.png" alt="imagem zero 27 o footer">
+        </div>
+        
+          <nav class="rodape-menu">
+            <ul>
+              <li><a href="index.html">Quem somos?</a></li>
+              <li><a href="clientes.html">Quem são nossos clientes?</a></li>
+              <li><a href="serviços.html">O que oferecemos</a></li>
+              <li><a href="contatos.html">Fale conosco</a></li>
+              <li><a href="vagas.html">Veja nossas vagas</a></li>
+              <li><a href="privace.html">Conheça nossa politica de privacidade</a></li>
+
+            </ul>
+          </nav>
+      
+
+        <div class="rodape-sociais">
+          <h3>Siga nosso trabalho:</h3>
+          <ul>
+            <li><img src="./res/facebook-min.png" alt="icone do facebook"></li>
+            <li><img src="./res/instagram-min.png" alt=" icone do instagram"></li>
+            <li><img src="./res/linkedin-min.png" alt="icone do linkedin"></li>
+          </ul>
+
+        </div>
+
+        <div class="bot">
+          <span>Fale agora mesmo com nossos especialistas</span>
+          <input type="text" placeholder="Seu numero Whatsaap" id="numero" />
+          <textarea
+            id="mensagem"
+            value=""
+            rows="5"
+            placeholder="digite aqui sua mensagem..."
+          ></textarea>
+          <input type="submit" value="enviar" id="enter" />
+        </form>
+        <img src="./res/atendente.png" alt="bot do site" class="bot-image" />
+      </div>
+    
+      </section>
+      
+    </footer>
+    <p class="legal">© 2024 Zero27 RH - Todos os direitos reservados.</p>
+  </body>
+</html>
