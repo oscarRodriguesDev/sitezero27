@@ -1,0 +1,330 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+/* Estilos de todo container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 99vw;
+  height: auto;
+  color: white;
+  overflow-x: hidden;
+}
+
+
+/* Estilos de qualquer lista na pagina */
+ul li {
+  list-style-type: none;
+}
+
+/* qualquer anchor */
+a {
+  text-decoration: none;
+}
+
+/* qualquer paragrafo */
+p {
+  font-size: 20px;
+}
+
+/* qualquer titulo */
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+h5 {
+  font-size: 15px;
+}
+
+h6 {
+  font-size: 12px;
+}
+
+/* Cabeçalho da pagina */
+.cabecalho {
+  width: 100%;
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  flex: 1;
+
+}
+
+.menu a {
+  text-align: center;
+  margin-left: 50px;
+  font-size: 20px;
+  color: #9B7011;
+  flex: 1;
+}
+
+.menu a:hover {
+ color:#fff;
+}
+
+.menu img {
+  border-radius: 25%;
+  border: 2px solid rgba(237, 233, 225, 0.515);
+  width: 150px;
+  height: 130px;
+  margin: 20px 0;
+  padding: 5px;
+}
+
+.menu img:hover {
+  padding: 0;
+}
+
+
+
+/* BAnner das paginas */
+.banner {
+  margin-left: 0;
+  align-items: flex-start;
+}
+
+.banner img {
+  width: 100%;
+}
+
+/* serviço da pagina */
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width:85%;
+}
+
+.rodape {
+  background-image: url(/res/fundofooter-min.png);
+  font-display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+  flex:1;
+}
+
+.rodape-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  width: 100%;
+  height: 550px;
+  flex: 1;
+}
+
+.img-footer {
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: 100%;
+  margin: 0;
+}
+
+.img-footer img {
+  width: 100%;
+  height: 100%;
+  flex: 1;
+}
+
+
+.rodape-menu {
+  width: 25%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+
+}
+
+.rodape-menu a {
+  color: white;
+  font-size: 18px;
+
+}
+
+.rodape-menu ul li {
+  display: block;
+  list-style: none;
+  width: 250px;
+  margin: 10px 25px;
+  text-align: center;
+  padding: 0
+}
+
+.rodape-menu ul li a {
+  font-size: 20px;
+  padding: 0;
+  border-radius: 5px;
+  transition: border .7s, background-color .7s, color .7s, transform .7s
+}
+
+.rodape-menu ul li a:hover {
+  color: #141313;
+  transform: scaleX(1.3)
+}
+
+
+.bot {
+  margin-top: 5%;
+  padding: 2%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  max-width: 400px;
+  left: 8%;
+}
+
+.bot {
+  flex-direction: column;
+  display: flex;
+  margin-top: 5%;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  max-width: 400px;
+  left: 8%
+}
+
+.bot span {
+  font-weight: 700;
+  color: #075e54;
+  margin-bottom: 10px
+}
+
+.bot input[type=text],
+.bot textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: none
+}
+
+.bot input[type=text] {
+  display: none
+}
+
+.bot input[type=submit] {
+  background-color: #075e54;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer
+}
+
+
+.bot-image {
+  width: 35%;
+  height: 35%;
+  animation: 2s linear infinite mexer;
+}
+
+
+@keyframes mexer {
+
+  0%,
+  100% {
+    transform: translateX(0)
+  }
+
+  50% {
+    transform: translateX(25px)
+  }
+}
+
+@keyframes mexerY {
+
+  0%,
+  100% {
+    transform: translateY(0)
+  }
+
+  50% {
+    transform: translateY(-25px)
+  }
+}
+
+.bot img:hover {
+  animation: 2s linear infinite mexerY
+}
+
+
+.rodape-sociais {
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+ 
+}
+
+.rodape-sociais .redes {
+  display: flex;
+  flex-direction: row;
+  width: 75%;
+}
+
+.rodape-sociais .redes img {
+  width: 20%;
+  height: 20%;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 1s;
+  transform-origin: center
+}
+
+.rodape-sociais img:hover {
+  border: 3px solid rgba(255, 255, 255, .817);
+  background-color: #ffffffc2;
+  transform: rotate(360deg) scale(1.5)
+}
+
+.legal {
+  margin: 0;
+  padding: 0;
+  color:white;
+text-align: center;
+  font-size: 9pt;
+}
+

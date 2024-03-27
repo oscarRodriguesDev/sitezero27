@@ -34,3 +34,5 @@ window.addEventListener('DOMContentLoaded',()=>{alterarEndereco('Morada De Laran
 formulario.addEventListener( 'submit', ()=>{impedirEnvio(Event)}, false ); 
 
 
+
+

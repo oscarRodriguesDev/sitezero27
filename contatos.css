@@ -1,0 +1,75 @@
+/* Estilos gerais */
+.formulario-contact{
+   align-items: center;
+    width: 50%;
+    margin: 5% 0;
+    border-radius: 8px;
+    background-color: #6c6c6c2d;
+    font-family: Arial, sans-serif;
+    padding:5%;
+}
+
+/* Estilo para rótulos */
+.formulario-contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para campos de entrada de texto */
+.formulario-contact input[type="text"],
+.formulario-contact input[type="email"],
+.formulario-contact input[type="tel"],
+.formulario-contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+/* Estilo para o botão de envio */
+.formulario-contact input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    width: 90%;
+    margin:0 5%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease;
+
+}
+
+.formulario-contact input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para o campo de mensagem */
+.formulario-contact textarea {
+    resize: vertical; /* Permite redimensionar verticalmente apenas */
+}
+
+/* Estilo para o campo obrigatório */
+.formulario-contact input:required,
+.formulario-contact textarea:required {
+    border-color: #FF6347; /* Vermelho coral */
+}
+
+/* Estilo para mensagens de erro */
+.formulario-contact input:invalid,
+.formulario-contact textarea:invalid {
+    border-color: #FF6347; /* Vermelho coral */
+}
+
+/* Estilo para mensagens de sucesso (após o envio) */
+.formulario-contact .enviado {
+    color: #4CAF50; /* Verde */
+    margin-top: 10px;
+    text-align: center;
+}
