@@ -1,17 +1,10 @@
 p{
   line-height: 45px;
-  font-size: 18px;
+  
 }
 
-header{
-    background-color: rgba(54, 76, 100, 0.735);
-    width: 100%;
-    text-align: center;
-    border-radius: 5px;
-    margin-bottom: 5px;
-}
 
-.corpo h3{
-    color:rgb(229, 255, 246);
-    font-weight: 700;
+
+.corpo{
+  margin-top: 25px;
 }

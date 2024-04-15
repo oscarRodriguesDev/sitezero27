@@ -1,3 +1,13 @@
+//slider:
+
+
+
+
+
+
+
+
+
 function enviarWhatsApp() {
     alert('funcionando')
    var mensagem = document.getElementById("mensagem").value;
@@ -29,10 +39,8 @@ btn_cad.addEventListener('click',()=>{
 
 
 
-window.addEventListener('DOMContentLoaded',()=>{alterarEndereco('Morada De Laranjeiras - Serra - ES','endereco')},false)
 
 formulario.addEventListener( 'submit', ()=>{impedirEnvio(Event)}, false ); 
 
 
-
-
+window.addEventListener('DOMContentLoaded',()=>{alterarEndereco('Morada De Laranjeiras - Serra - ES','endereco')},false)

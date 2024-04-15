@@ -8,6 +8,7 @@
 
 body {
   background-color: rgb(27, 27, 27);
+  color:#fff;
 }
 
 /* Estilos de todo container */
@@ -31,6 +32,8 @@ ul li {
 /* qualquer anchor */
 a {
   text-decoration: none;
+  color:white;
+  text-decoration: none;
 }
 
 /* qualquer paragrafo */
@@ -40,44 +43,58 @@ p {
 
 /* qualquer titulo */
 h1 {
-  font-size: 36px;
+  font-size: 40px;
+  font-weight: 700;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 38px;
+  font-weight: 600;
+}
+
+
+h3 {
+  font-size: 36px;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: 24px;
-}
-
-h3 {
-  font-size: 20px;
+  font-size: 34px;
+  font-weight: 400;
 }
 
 h4 {
-  font-size: 18px;
+  font-size: 32px;
+  font-weight: 300;
 }
 
 h5 {
-  font-size: 15px;
+  font-size: 30px;
+  font-weight: 200;
 }
 
 h6 {
-  font-size: 12px;
+  font-size: 28px;
+  font-weight: 100;
 }
 
+p{
+  font-size: 24px;
+}
 /* Cabeçalho da pagina */
 .cabecalho {
   width: 100%;
   flex: 1;
+  position: absolute;
+  top: 0;
+  background-color:#000000;
 }
 
 .menu {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 70%;
   flex: 1;
 
 }
@@ -85,13 +102,17 @@ h6 {
 .menu a {
   text-align: center;
   margin-left: 50px;
-  font-size: 20px;
-  color: #9B7011;
+  font-size: 24px;
+  font-weight: 500;
+  color: #ffcd04c0;
   flex: 1;
+ 
 }
 
-.menu a:hover {
- color:#fff;
+.menu a:hover{
+  font-weight: 700;
+  color: #ffffff;
+ 
 }
 
 .menu img {
@@ -101,31 +122,95 @@ h6 {
   height: 130px;
   margin: 20px 0;
   padding: 5px;
+ 
 }
 
 .menu img:hover {
   padding: 0;
+
 }
 
+/*slider*/
 
 
-/* BAnner das paginas */
-.banner {
-  margin-left: 0;
-  align-items: flex-start;
-}
-
-.banner img {
+.imagens {
+  display: flex;
   width: 100%;
+  height: 700px;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: passar 90s linear infinite;
+
+
 }
+
+
+/* podemos selecionar apenas 6 imagens para passar */
+@keyframes passar {
+0%,100%{
+  background-image: url(./res/slide/1.png);
+}
+10%,90%{
+
+  background-image: url(./res/slide/2.png);
+}
+20%,80%{
+ 
+  background-image: url(./res/slide/3.png);
+}
+30%,70%{
+ 
+  background-image: url(./res/slide/4.png);
+}
+40%,60%{
+  
+  background-image: url(./res/slide/5.png);
+}
+50%{
+ 
+  background-image: url(./res/slide/6.png);
+} 
+}
+
+
+
+.imagens nav {
+  background-color: #141313a5;
+  width: 98%;
+  margin: 0 1%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
 
 /* serviço da pagina */
 .service {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width:85%;
+  width: 85%;
+  margin-top:1px;
+  margin-bottom: 35px;
 }
+
+
+header{
+    background-color: rgba(54, 76, 100, 0.735);
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 35px;
+}
+
+
+
 
 .rodape {
   background-image: url(/res/fundofooter-min.png);
@@ -136,7 +221,7 @@ h6 {
   margin-left: 0;
   width: 100%;
   height: auto;
-  flex:1;
+  flex: 1;
 }
 
 .rodape-container {
@@ -175,6 +260,7 @@ h6 {
 .rodape-menu a {
   color: white;
   font-size: 18px;
+  font-weight: 600;
 
 }
 
@@ -196,6 +282,7 @@ h6 {
 
 .rodape-menu ul li a:hover {
   color: #141313;
+  font-weight: 600;
   transform: scaleX(1.3)
 }
 
@@ -296,7 +383,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   width: 20%;
- 
+
 }
 
 .rodape-sociais .redes {
@@ -310,21 +397,20 @@ h6 {
   height: 20%;
   border-radius: 50%;
   cursor: pointer;
-  transition: 1s;
+  transition: 0.5s;
   transform-origin: center
 }
 
 .rodape-sociais img:hover {
   border: 3px solid rgba(255, 255, 255, .817);
   background-color: #ffffffc2;
-  transform: rotate(360deg) scale(1.5)
+  transform: rotate(calc(360deg *3)) scale(1.5)
 }
 
 .legal {
   margin: 0;
   padding: 0;
-  color:white;
-text-align: center;
+  color: white;
+  text-align: center;
   font-size: 9pt;
 }
-
