@@ -66,3 +66,158 @@ article p{
     box-sizing: border-box;
     
 }
+
+
+
+@media screen and (max-width: 375px) and (min-width: 300px),
+(max-width: 430px) {
+    header{
+      margin-top: 2%;
+    }
+
+    header h2{
+        font-size: 150%;
+    }
+
+    .vagas{
+        flex-direction: column;
+    }
+
+    .vaga h2{
+        font-size: 120%;
+    }
+
+ .vaga article{
+    flex-direction: column;
+        
+  }
+  
+  .vaga article img{
+    width: 90%;
+    height: auto;
+  }
+
+  .vaga article p{
+    font-size: 80%;
+  }
+
+  .info-empresa{
+    width: 100%;
+    border:1px solid white;
+ 
+  }
+
+  .info-empresa button{
+    font-size: 50%;
+    width: 30%;
+    margin:2% 35%;
+
+    
+  }
+  
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+
+    header{
+        margin-top: 2%;
+      }
+  
+      header h2{
+          font-size: 170%;
+      }
+  
+      .vagas{
+          flex-direction: column;
+      }
+  
+      .vaga h2{
+          font-size: 130%;
+      }
+  
+   .vaga article{
+      flex-direction: column;
+          
+    }
+    
+    .vaga article img{
+      width: 100%;
+      height: auto;
+    }
+  
+    .vaga article p{
+      font-size: 120%;
+    }
+  
+    .info-empresa{
+      width: 100%;
+      border:1px solid white;
+   
+    }
+  
+    .info-empresa button{
+      font-size: 80%;
+      width: 50%;
+      margin:2% 25%;
+  
+      
+    }
+
+  
+}
+
+
+
+@media screen and (max-width: 767px) and (min-width: 431px) {
+
+    header{
+        margin-top: 2%;
+      }
+  
+      header h2{
+          font-size: 170%;
+      }
+  
+      .vagas{
+          flex-direction: column;
+      }
+  
+      .vaga h2{
+          font-size: 130%;
+      }
+  
+   .vaga article{
+      flex-direction: column;
+          
+    }
+    
+    .vaga article img{
+      width: 100%;
+      height: auto;
+    }
+  
+    .vaga article p{
+      font-size: 120%;
+    }
+  
+    .info-empresa{
+      width: 100%;
+      border:1px solid white;
+   
+    }
+  
+    .info-empresa button{
+      font-size: 80%;
+      width: 50%;
+      margin:2% 25%;
+  
+      
+    }
+  
+  
+}

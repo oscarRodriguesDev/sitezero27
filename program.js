@@ -1,46 +1,39 @@
-//slider:
-
-
-
-
-
-
-
-
+// slider:
+// Verificar se o usuário já aceitou os cookies
 
 function enviarWhatsApp() {
-    alert('funcionando')
-   var mensagem = document.getElementById("mensagem").value;
-    var numeroWhatsApp = "+5527988991663";
-    var urlWhatsApp = "whatsapp://send?phone=" +numeroWhatsApp + "&text=" + encodeURIComponent(mensagem);
-    window.location.href = urlWhatsApp;
+  alert("funcionando");
+  var mensagem = document.getElementById("mensagem").value;
+  var numeroWhatsApp = "+5527988991663";
+  var urlWhatsApp =
+    "whatsapp://send?phone=" +
+    numeroWhatsApp +
+    "&text=" +
+    encodeURIComponent(mensagem);
+  window.location.href = urlWhatsApp;
 }
 
-var formulario =  document.getElementById("form");
-var botão = document.getElementById('enter')
-botão.addEventListener( 'click', enviarWhatsApp,false)
-//impedir o action do formulario quando clica em enviar no botão submit com o prevent default
-function impedirEnvio(event){
-    event.preventDefault();
-    enviarWhatsApp();
+var botão = document.getElementById("enter");
+botão.addEventListener("click", enviarWhatsApp, false);
+
+// impedir o action do formulario quando clica em enviar no botão submit com o prevent default
+
+function impedirEnvio(event) {
+  event.preventDefault();
+  enviarWhatsApp();
 }
 
-function alterarEndereco(endereço,id){
-    document.getElementById(id).innerText= endereço;
-    
+// Verificar se o usuário já aceitou os cookies
+if (localStorage.getItem("cookiesAccepted") == "true") {
+  document.getElementById("cookie-notice").style.display = "none";
+} else {
+  //document.getElementById("cookie-notice").style.display = "block";
 }
 
-const btn_cad  = document.querySelector('.cad-btn')
-
-btn_cad.addEventListener('click',()=>{
-   //redirecionar para pagina de contatos
-   location.replace('contatos.html');
-},false)
-
-
-
-
-formulario.addEventListener( 'submit', ()=>{impedirEnvio(Event)}, false ); 
-
-
-window.addEventListener('DOMContentLoaded',()=>{alterarEndereco('Morada De Laranjeiras - Serra - ES','endereco')},false)
+// Adicionar evento de clique ao botão "Aceitar"
+document
+  .getElementById("accept-cookies")
+  .addEventListener("click", function () {
+    localStorage.setItem("cookiesAccepted", true);
+    document.getElementById("cookie-notice").style.display = "none";
+  });

@@ -1,11 +1,11 @@
-.clientes .cliente{
+ .cliente{
     display:flex;
     flex-direction: column;
     align-items: center;
 }
 
 .cliente img{
-    background-color: rgb(255, 255, 255);
+ background-color: rgb(255, 255, 255);
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -23,5 +23,119 @@
     gap:100px 100px;
     cursor:pointer;
     
+}
+
+@media screen and (max-width: 375px) and (min-width: 300px),
+(max-width: 430px) {
+
+    header{
+    margin-top: 2%;
+    }
+
+    header h2{
+        font-size: 150%;
+    }
+
+
+    .clientes{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        gap:0.2px;
+        cursor:pointer;
+    }
+
+    .cliente img{
+        background-color: rgb(255, 255, 255);
+         width: 50px;
+         height:auto;
+         border-radius: 50%;
+         border:2px solid #ffffff35;
+         padding:10px;
+       }
+
+       .cliente p{
+        font-size: 75%;
+        width: 75%;
+        text-align: center;
+       }
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 1199px) and (min-width: 768px) {
+
+    header{
+        margin-top: 2%;
+        }
+    
+        header h2{
+            font-size: 160%;
+        }
+    
+    
+        .clientes{
+            display: grid;
+            grid-template-columns: auto auto auto auto ;
+            gap:12%;
+            cursor:pointer;
+        }
+    
+        .cliente img{
+            background-color: rgb(255, 255, 255);
+             width:100px;
+             height:auto;
+             border-radius: 50%;
+             border:2px solid #ffffff35;
+             padding:10px;
+           }
+    
+           .cliente p{
+            font-size: 75%;
+            width: 75%;
+            text-align: center;
+           }
+     
+  
+}
+
+
+
+@media screen and (max-width: 767px) and (min-width: 431px) {
+
+
+    header{
+        margin-top: 2%;
+        }
+    
+        header h2{
+            font-size: 150%;
+        }
+    
+    
+        .clientes{
+            display: grid;
+            grid-template-columns: auto auto auto ;
+            gap:0.2px;
+            cursor:pointer;
+        }
+    
+        .cliente img{
+            background-color: rgb(255, 255, 255);
+             width: 50px;
+             height:auto;
+             border-radius: 50%;
+             border:2px solid #ffffff35;
+             padding:10px;
+           }
+    
+           .cliente p{
+            font-size: 75%;
+            width: 75%;
+            text-align: center;
+           }
+      
 }
 
