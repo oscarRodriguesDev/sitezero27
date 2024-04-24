@@ -4,7 +4,7 @@
 function enviarWhatsApp() {
   alert("funcionando");
   var mensagem = document.getElementById("mensagem").value;
-  var numeroWhatsApp = "+5527988991663";
+  var numeroWhatsApp = "27998836800";// numero oficial
   var urlWhatsApp =
     "whatsapp://send?phone=" +
     numeroWhatsApp +
